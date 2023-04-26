@@ -28,7 +28,7 @@ setInterval(function() {
     
     document.getElementById("theTrollingHasBegun").style.display = began ? "none" : ""
     document.getElementById("completeAndUtterTrolling").style.display = began ? "" : "none"
-    document.getElementById("completeAndUtterTrolling").innerHTML = (getTrolling()>=10)?"CHEATER!!!":((timePassed > 4.5 ? "Trolling is" : "Taxes are")+" 10% weaker<br>Cost: 10 "+(timePassed > 5 ? "Troll'd" : "Gold"))
+    document.getElementById("completeAndUtterTrolling").innerHTML = (getTrolling()>=9)?"CHEATER!!!":((timePassed > 4.5 ? "Trolling is" : "Taxes are")+" 10% weaker<br>Cost: 10 "+(timePassed > 5 ? "Troll'd" : "Gold"))
     document.getElementById("trollingDiv").style.display = began ? "" : "none"
     document.getElementById("trolling").textContent = getTrolling().toFixed(5);
     document.getElementById("trollingGain").textContent = getTrollingGain().toFixed(5);
